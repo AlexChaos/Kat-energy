@@ -1,0 +1,32 @@
+/*coment*/
+.promo__header {
+  background-color: $promo-header-background-color;
+}
+
+.promo__heade-title {
+  @include margin-padding-reset;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  color: $promo-title-text-color;
+}
+
+.promo__slogan {
+  color: $promo-slogan-text-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  color: $promo-link-text-color;
+  background-color: $promo-link-button-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}

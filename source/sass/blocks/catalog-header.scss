@@ -1,0 +1,114 @@
+/*coment*/
+.catalog-header__title {
+  @include margin-padding-reset;
+  color: $catalog-headet-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.catalog__product-title {
+  @include margin-padding-reset;
+}
+
+.catalog__product-title a {
+  color: $catalog-product-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__product-characteristic {
+  color: $catalog-product-characteristic-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog__product-buy {
+  color: $catalog-product-buy-color;
+  background-color: $catalog-product-buy-background-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__more-products-title {
+  @include margin-padding-reset;
+  color: $catalog-more-product-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__more-products-description {
+  @include margin-padding-reset;
+  color: $catalog-more-product-description-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog__more-products-show {
+  color: $catalog-more-product-show-color;
+  background-color: $catalog-more-product-show-background-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__other-goods-title {
+  @include margin-padding-reset;
+  color: $catalog-other-goods-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog__other-goods-item-title {
+  @include margin-padding-reset;
+  color: $catalog-other-goods-item-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.catalog__other-goods-price-table {
+  color: $catalog-other-goods-price-tible-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.catalog__other-goods-button {
+  color: $catalog-other-goods-button-color;
+  background-color: $catalog-other-goods-button-background-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__item-present-description {
+  //color: $catalog-present-description-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}

@@ -1,26 +1,6 @@
 /*coment*/
 .button {
-  @include margin-padding-reset;
-  width: 259px;
-  height: 52px;
-  font-size: 17px;
-  line-height: 20px;
-  font-family: "Open-Sans-Bold", "Arial", sans-serif;
-  color: $color-button-text;
-  text-transform: uppercase;
-  background-color: $color-button-background;
-  border: 2px solid $color-button-border;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: $color-text-button-hover;
-  background-color: $color-background-button-hover;
-  transition: color 0.5s ease, background 0.5s ease;
-}
-
-.button:active {
-  color: $color-text-button-active;
-  background-color: $color-background-button-hover;
-  transition: color 0.5s ease, background 0.5s ease;
+  width: 280px;
+  height: 40px;
+  border: none;
 }

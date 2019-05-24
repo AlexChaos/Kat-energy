@@ -1,0 +1,98 @@
+/*coment*/
+.form__description {
+  @include margin-padding-reset;
+  color: $form-description-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__element {
+  @include margin-padding-reset;
+}
+
+.form__element label {
+  color: $form-element-color-label;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__element input[placeholder] {
+  color: $form-element-color-input;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__programm-items {
+  @include list-reset;
+  color: $form-program-items;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__items-title,
+.form-coment__title {
+  @include margin-padding-reset;
+  color: $form-items-title;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form__comment-area[placeholder] {
+  color: $form-coment-area;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__extra-fields-title {
+  @include margin-padding-reset;
+  color: $form-extra-fields-title;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form__extra {
+  @include list-reset;
+  color: $form-extra;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__button {
+  color: $form-button;
+  background-color: $form-button-background-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.form__note {
+  color: $form-note-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
