@@ -1,0 +1,22 @@
+/*coment*/
+.advantages__title {
+  @include margin-padding-reset;
+  color: $advantage-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.advantages__list {
+  @include list-reset;
+  color: $advantage-list-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.advantages__item {
+  padding-bottom: 32px;
+}

@@ -1,0 +1,9 @@
+/*coment*/
+.form-header__title {
+  @include margin-padding-reset;
+  color: $form-header-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+}

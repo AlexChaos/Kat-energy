@@ -1,0 +1,27 @@
+/*coment*/
+.categories__title {
+  color: $categories-title-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.02px;
+  text-transform: uppercase;
+}
+
+.categories__description {
+  @include margin-padding-reset;
+  color: $categories-description-color;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.categories__link {
+  color: $categories-link-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
