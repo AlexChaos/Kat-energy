@@ -1,4 +1,9 @@
 /*coment*/
+.main-nav {
+  position: relative;
+  //display: none;
+}
+
 .main-nav__list {
   @include list-reset;
   font-family: "Oswald", "Arial", sans-serif;
@@ -6,4 +11,13 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 0;
+  background-color: $color-body-background;
+  border: none;
 }

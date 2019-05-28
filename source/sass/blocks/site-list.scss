@@ -1,1 +1,23 @@
 /*coment*/
+.site-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-list__item a {
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  color: $cmain-nav-menu-text-color;
+}
+
+.site-list__item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: $main-menu-border-color;
+}
