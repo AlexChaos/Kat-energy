@@ -21,3 +21,24 @@
   height: 1px;
   background-color: $main-menu-border-color;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    padding-left: 16px;
+    padding-right: 19px;
+  }
+
+  /*.site-list__item:first-child {
+    padding-left: 0;
+  }*/
+
+  .site-list__item::before {
+    display: none;
+  }
+
+  .site-list__item a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.86px;
+  }
+}

@@ -10,3 +10,14 @@
 .copyright__logo-htmlacademy {
   margin-top: -8px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding-top: 14px;
+    padding-right: 23px;
+  }
+
+  .copyright__logo-htmlacademy {
+    padding-top: 13px;
+  }
+}

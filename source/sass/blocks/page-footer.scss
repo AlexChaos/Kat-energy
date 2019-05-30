@@ -34,7 +34,6 @@
 
 .page-footer__social-list {
   @include list-reset;
-  padding: 18px 0 16px;
   display: flex;
   justify-content: space-between;
   width: 142px;
@@ -82,4 +81,50 @@
 
 .page-footer__social-icon-svg-fb {
   padding-right: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+
+  .page-footer__social::before,
+  .page-footer__copyright::before {
+    display: none;
+  }
+
+  .page-footer__logo {
+    padding-top: 42px;
+  }
+
+  .page-footer__social-icon-svg-vk {
+    width: 30px;
+    height: 16px;
+    padding-top: 5px;
+    padding-left: 19px;
+  }
+
+  .page-footer__social-icon-svg-insta {
+    width: 23px;
+    height: 23px;
+    padding-top: 5px;
+    padding-left: 3px;
+  }
+
+  .page-footer__social-icon-svg-fb {
+    width: 14px;
+    height: 28px;
+    padding-top: 4px;
+    padding-right: 0;
+  }
 }
