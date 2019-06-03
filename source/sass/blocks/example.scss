@@ -166,7 +166,7 @@
   }
 
   .example__wrapper {
-    width: 768px;
+    width: 708px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -256,7 +256,7 @@
 
   .example__wrapper-before-after {
     position: relative;
-    width: 768px;
+    width: 708px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -274,7 +274,7 @@
     position: relative;
     display: flex;
     width: 317px;
-    right: 29px;
+    //right: 29px;
     min-height: 677px;
     overflow: hidden;
     z-index: 2;
@@ -294,7 +294,7 @@
     position: relative;
     display: flex;
     width: 317px;
-    right: 29px;
+    //right: 29px;
     min-height: 677px;
     overflow: hidden;
     z-index: 20;
@@ -353,5 +353,89 @@
     height: 8px;
     border-radius: 50%;
     background-color: $example-rectangle-background-after-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: flex;
+    padding-bottom: 27px;
+  }
+
+  .example__wrapper {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  .example__result-wrapper {
+    width: 420px;
+  }
+
+  .example__title {
+    padding-bottom: 146px;
+  }
+
+  .example__description {
+    position: relative;
+    z-index: 2;
+    width: 434px;
+    padding-bottom: 100px;
+  }
+
+  .example__cost {
+    position: relative;
+    z-index: 2;
+    width: 420px;
+    padding-top: 33px;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .example__cost span {
+    padding-left: 64px;
+  }
+
+  .example__mass,
+  .example__day {
+    position: relative;
+    z-index: 2;
+    padding-top: 15px;
+  }
+
+  .example__before {
+    width: 380px;
+  }
+
+  .example__wrapper-before-after {
+    width: auto;
+    margin-top: -675px;
+    margin-left: 589px;
+  }
+
+  .example__after .example__img {
+    margin-left: -45px;
+  }
+
+  .example__after picture {
+    width: 0;
+    height: 0;
+  }
+
+  .example__controls {
+    justify-content: flex-end;
+    padding-top: 22px;
+  }
+
+  .example::before,
+  .example::after {
+    top: 158px;
+  }
+
+  .example__weight,
+  .example__time {
+    background-color: $example-before-background-color;
   }
 }

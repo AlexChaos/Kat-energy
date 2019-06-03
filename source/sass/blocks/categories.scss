@@ -107,7 +107,7 @@
 
 @media (min-width: $tablet-width) {
   .categories__wrapper {
-    width: 768px;
+    width: 708px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -192,5 +192,76 @@
     height: 112px;
     top: 59px;
     left: 359px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  .categories__item {
+    width: 570px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .categories__title {
+    padding-left: 214px;
+    padding-bottom: 75px;
+  }
+
+  .categories__description {
+    width: 465px;
+    padding-left: 52px;
+  }
+
+  .categories__title-losing-weight::after {
+    width: 100px;
+    height: 100px;
+    top: -29px;
+    left: 53px;
+  }
+
+  .categories__title-losing-weight::before {
+    top: -35px;
+    left: 65px;
+    width: 71px;
+    height: 97px;
+  }
+
+  .categories__title-weight-gain::after {
+    width: 100px;
+    height: 100px;
+    top: -29px;
+    left: 52px;
+  }
+
+  .categories__title-weight-gain::before {
+    top: -7px;
+    left: 33px;
+    width: 134px;
+    height: 57px;
+  }
+
+  .categories__link {
+    padding-top: 10px;
+    padding-left: 53px;
+  }
+
+  .categories__link-one::after {
+    top: 13px;
+    left: 183px;
+  }
+
+  .categories__link-two::after {
+    top: 14px;
+    left: 178px;
   }
 }
