@@ -1,1 +1,11 @@
 /*coment*/
+.product::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -20px;
+  height: 1px;
+  width: 100vw;
+  background-color: $product-beforeline-color;
+  display: none;
+}

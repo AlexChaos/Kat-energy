@@ -1,4 +1,8 @@
 /*coment*/
+.contacts--background {
+  background: #f2f2f2;
+}
+
 .contacts__wrapper {
   width: 280px;
   padding-left: 20px;
@@ -6,6 +10,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .contacts__invite {
@@ -17,7 +22,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding-top: 30px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
 }
 
 .contacts__address {
@@ -44,6 +49,7 @@
 }
 
 .contacts__map-wrapper picture {
+  display: flex;
   width: 100%;
   height: 359px;
 }
@@ -73,8 +79,8 @@
     width: 154px;
     font-size: 20px;
     font-weight: 400;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 66px;
+    padding-bottom: 56px;
     padding-left: 40px;
     line-height: 25px;
   }
@@ -86,7 +92,7 @@
     line-height: 20px;
     text-align: right;
     margin-left: auto;
-    padding-top: 53px;
+    padding-top: 65px;
     padding-bottom: 50px;
     padding-right: 42px;
   }
