@@ -32,12 +32,22 @@
   }
 
   .catalog-header__title {
-    width: 435px;
+    width: 708px;
+    margin: 0 auto;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
     padding-top: 50px;
     padding-bottom: 39px;
-    padding-left: 30px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-header__title {
+    padding-top: 67px;
+    padding-left: 0;
+    width: 1220px;
+    margin: 0 auto;
   }
 }

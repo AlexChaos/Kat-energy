@@ -264,6 +264,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 43px;
+  }
+
   .catalog__wrapper {
     display: flex;
     flex-direction: row;
@@ -418,12 +422,12 @@
     padding-right: 36px;
     padding-top: 25px;
     padding-bottom: 28px;
-    border: 1px solid #cdcdcd;
+    border: 1px solid $catalog-other-goods-item-border;
     border-bottom: none;
   }
 
   .catalog__other-goods-item:nth-child(5) {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $catalog-other-goods-item-child;
   }
 
   .catalog__other-goods-wrapper {
@@ -517,5 +521,133 @@
     top: 132px;
     left: 91px;
     z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 88px;
+  }
+
+  .catalog__wrapper {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+
+  .catalog__item-img-wrapper {
+    width: 245px;
+  }
+
+  .catalog__item-img {
+    width: 245px;
+  }
+
+  .catalog__product-wrapper {
+    width: 169px;
+  }
+
+  .catalog__product-characteristic {
+    width: 169px;
+  }
+
+  .catalog__product-buy {
+    width: 169px;
+  }
+
+  .catalog__item::after {
+    width: 245px;
+  }
+
+  .catalog__more-products {
+    width: 167px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 16px;
+  }
+
+  .catalog__more-products-show {
+    width: 169px;
+  }
+
+  .catalog__other-goods-title span {
+    padding-left: 0;
+    padding-bottom: 81px;
+  }
+
+  .catalog__other-goods {
+    margin-top: 60px;
+  }
+
+  .catalog__other-goods-title::before {
+    width: 1300px;
+    left: -40px;
+  }
+
+  .catalog__other-goods-wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__img-wrapper {
+    width: 245px;
+    height: 289px;
+  }
+
+  .catalog__other-goods-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 895px;
+  }
+
+  .catalog__other-goods-item {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-left: none;
+    border-right: none;
+    align-items: center;
+  }
+
+  .catalog__other-goods-button {
+    width: 245px;
+  }
+
+  .catalog__other-goods-item-title {
+    padding: 0;
+    width: 282px;
+  }
+
+  .catalog__other-goods-price-table tr {
+    padding-bottom: 0;
+    align-self: stretch;
+    width: 285px;
+    padding-left: 6px;
+    padding-top: 6px;
+  }
+
+  .catalog__item-present {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .catalog__other-goods-item:nth-child(4) {
+    border-bottom: 1px solid $catalog-other-goods-item-child;
+  }
+
+  .catalog__other-goods-quantity:nth-child(odd) {
+    text-align: left;
+  }
+
+  .catalog__other-goods-price-table .water {
+    padding-right: 8px;
   }
 }

@@ -47,8 +47,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__item a {
+  .site-list--index a {
     color: $main-nav-menu-text-color-desktop;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px;
+  }
+
+  .site-list--catalog a {
     font-size: 20px;
     font-weight: 400;
     line-height: 24.86px;

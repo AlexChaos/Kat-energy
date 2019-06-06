@@ -24,7 +24,7 @@
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--catalog">
               <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
@@ -262,49 +262,51 @@
           <div class="catalog__other-goods-wrapper">
             <h2 class="catalog__other-goods-title"><span>Дополнительные товары</span></h2>
 
-            <article class="catalog__other-goods-item">
-              <h3 class="catalog__other-goods-item-title">Сахарозаменитель</h3>
-              <table class="catalog__other-goods-price-table">
-                <tr>
-                  <td class="catalog__other-goods-quantity">1 упаковка (100 г)</td>
-                  <td class="catalog__other-goods-price">200 Р.</td>
-                </tr>
-              </table>
-              <a href="#" class="catalog__other-goods-button button">Заказать</a>
-            </article>
+            <div class="catalog__other-goods-item-wrapper">
+              <article class="catalog__other-goods-item">
+                <h3 class="catalog__other-goods-item-title">Сахарозаменитель</h3>
+                <table class="catalog__other-goods-price-table">
+                  <tr>
+                    <td class="catalog__other-goods-quantity">1 упаковка (100 г)</td>
+                    <td class="catalog__other-goods-price">200 Р.</td>
+                  </tr>
+                </table>
+                <a href="#" class="catalog__other-goods-button button">Заказать</a>
+              </article>
 
-            <article class="catalog__other-goods-item">
-              <h3 class="catalog__other-goods-item-title">Питьевая вода</h3>
-              <table class="catalog__other-goods-price-table">
-                <tr>
-                  <td class="catalog__other-goods-quantity">5 литров</td>
-                  <td class="catalog__other-goods-price">50 Р.</td>
-                </tr>
-              </table>
-              <a href="#" class="catalog__other-goods-button button">Заказать</a>
-            </article>
+              <article class="catalog__other-goods-item">
+                <h3 class="catalog__other-goods-item-title">Питьевая вода</h3>
+                <table class="catalog__other-goods-price-table">
+                  <tr>
+                    <td class="catalog__other-goods-quantity">5 литров</td>
+                    <td class="catalog__other-goods-price water">50 Р.</td>
+                  </tr>
+                </table>
+                <a href="#" class="catalog__other-goods-button button">Заказать</a>
+              </article>
 
-            <article class="catalog__other-goods-item">
-              <h3 class="catalog__other-goods-item-title">Молоко</h3>
-              <table class="catalog__other-goods-price-table">
-                <tr>
-                  <td class="catalog__other-goods-quantity">1 литр</td>
-                  <td class="catalog__other-goods-price">100 Р.</td>
-                </tr>
-              </table>
-              <a href="#" class="catalog__other-goods-button button">Заказать</a>
-            </article>
+              <article class="catalog__other-goods-item">
+                <h3 class="catalog__other-goods-item-title">Молоко</h3>
+                <table class="catalog__other-goods-price-table">
+                  <tr>
+                    <td class="catalog__other-goods-quantity">1 литр</td>
+                    <td class="catalog__other-goods-price">100 Р.</td>
+                  </tr>
+                </table>
+                <a href="#" class="catalog__other-goods-button button">Заказать</a>
+              </article>
 
-            <article class="catalog__other-goods-item">
-              <h3 class="catalog__other-goods-item-title">Витамины</h3>
-              <table class="catalog__other-goods-price-table">
-                <tr>
-                  <td class="catalog__other-goods-quantity">1 упаковка (30 г)</td>
-                  <td class="catalog__other-goods-price">300 Р.</td>
-                </tr>
-              </table>
-              <a href="#" class="catalog__other-goods-button button">Заказать</a>
-            </article>
+              <article class="catalog__other-goods-item">
+                <h3 class="catalog__other-goods-item-title">Витамины</h3>
+                <table class="catalog__other-goods-price-table">
+                  <tr>
+                    <td class="catalog__other-goods-quantity">1 упаковка (30 г)</td>
+                    <td class="catalog__other-goods-price">300 Р.</td>
+                  </tr>
+                </table>
+                <a href="#" class="catalog__other-goods-button button">Заказать</a>
+              </article>
+            </div>
 
             <section class="catalog__item-present present">
               <img class="catalog__item-cart" src="img/icon-gift.svg" width="56" height="60" alt="Корзинка для заказа в интернете">
@@ -327,10 +329,12 @@
     </section>
 
     <section class="contacts contacts--background">
+      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <b class="contacts__invite">приглашаем<br>к сотрудничеству дилеров!</b>
-        <span class="contacts__address">ул. Большая Конюшенная, д. 19/8<b>Санкт-Петербург</b></span>
+        <div class="contacts__background-color contacts__invite-address-wrapper">
+          <b class="contacts__invite">приглашаем<br>к сотрудничеству дилеров!</b>
+          <span class="contacts__address">ул. Большая Конюшенная, д. 19/8<b>Санкт-Петербург</b></span>
+        </div>
         <div class="contacts__map-wrapper">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">

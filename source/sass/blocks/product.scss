@@ -9,3 +9,16 @@
   background-color: $product-beforeline-color;
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 169px;
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 30px;
+  }
+}

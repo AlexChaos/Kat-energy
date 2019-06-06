@@ -3,7 +3,7 @@
   background: #f2f2f2;
 }
 
-.contacts__wrapper {
+.contacts__invite-address-wrapper {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: $contacts-invite-address-wrapper-background-color;
 }
 
 .contacts__invite {
@@ -55,11 +56,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__wrapper {
+  .contacts__invite-address-wrapper {
     width: 708px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+  }
+
+  .contacts__background-color {
+    background-color: $catalog-item-after-background-color;
   }
 
   .contacts__map-wrapper {
@@ -79,7 +84,7 @@
     width: 154px;
     font-size: 20px;
     font-weight: 400;
-    padding-top: 66px;
+    padding-top: 55px;
     padding-bottom: 56px;
     padding-left: 40px;
     line-height: 25px;
@@ -92,7 +97,7 @@
     line-height: 20px;
     text-align: right;
     margin-left: auto;
-    padding-top: 65px;
+    padding-top: 54px;
     padding-bottom: 50px;
     padding-right: 42px;
   }
@@ -117,17 +122,25 @@
     position: relative;
   }
 
+  .contacts__wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
   .contacts__map-wrapper {
     width: 100%;
     margin: 0 auto;
   }
 
-  .contacts__wrapper {
+  .contacts__invite-address-wrapper {
     position: absolute;
+    display: flex;
+    justify-content: flex-start;
     padding-top: 64px;
     padding-left: 75px;
     padding-right: 75px;
-    padding-bottom: 54px;
+    padding-bottom: 48px;
     width: 570px;
     height: 200px;
     min-height: 200px;
@@ -155,9 +168,21 @@
     line-height: 20px;
     padding-top: 0;
     padding-right: 0;
-    padding-left: 95px;
+    padding-left: 97px;
     padding-bottom: 0;
     text-align: left;
     margin: 0;
+  }
+
+  .catalog__item-present-description {
+    top: 187px;
+    left: 40px;
+    text-align: center;
+  }
+
+  .catalog__item-cart {
+    top: 64px;
+    left: 96px;
+    z-index: 1;
   }
 }
