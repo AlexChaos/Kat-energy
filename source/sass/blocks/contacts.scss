@@ -55,6 +55,10 @@
   height: 359px;
 }
 
+.contacts__background-form-color {
+  background-color: $contacts-background-form-color;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__invite-address-wrapper {
     width: 708px;

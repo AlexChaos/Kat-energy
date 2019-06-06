@@ -1,16 +1,37 @@
 /*coment*/
+.form__wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
 .form__description {
   @include margin-padding-reset;
+  width: 226px;
   color: $form-description-color;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  padding-bottom: 40px;
 }
 
 .form__element {
   @include margin-padding-reset;
+  padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.form__element input {
+  @include margin-padding-reset;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  width: 172px;
+  flex-grow: 1;
 }
 
 .form__element label {
@@ -20,6 +41,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .form__element input[placeholder] {
@@ -51,6 +73,10 @@
   line-height: 24px;
 }
 
+.form__items-title {
+  padding-bottom: 34px;
+}
+
 .form__comment-area[placeholder] {
   color: $form-coment-area;
   font-family: "Oswald", "Arial", sans-serif;
@@ -67,6 +93,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  padding-bottom: 40px;
 }
 
 .form__extra {
@@ -81,6 +108,8 @@
 
 .form__button {
   color: $form-button;
+  display: flex;
+  justify-content: center;
   background-color: $form-button-background-color;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -90,9 +119,155 @@
 }
 
 .form__note {
+  @include margin-padding-reset;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 31px;
   color: $form-note-color;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+}
+
+.form__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.form__item::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $form-item-after-background-color;
+  bottom: 21px;
+  left: -20px;
+}
+
+.form__item-mass {
+  position: relative;
+  padding-bottom: 35px;
+}
+
+.form__item-mass::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: $form-item-mass-background-color;
+  left: -20px;
+  bottom: 28px;
+}
+
+.form__label--cat-name {
+  margin-right: 14px;
+}
+
+.form__label--weight {
+  margin-right: 16px;
+}
+
+.form__label--age {
+  margin-right: 14px;
+}
+
+.form__programm-item {
+  padding-left: 45px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.form__programm-label,
+.form__input-text {
+  position: relative;
+}
+
+.form__programm-label::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $form-programm-label-before-border-color;
+  border-radius: 50%;
+}
+
+.form__input-radio:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: -36px;
+  width: 12px;
+  height: 12px;
+  background-color: $form-input-radio-checked-background-color;
+  border-radius: 50%;
+}
+
+.form__label--email {
+  margin-right: 11px;
+}
+
+.form__label-phone {
+  margin-right: 10px;
+}
+
+.form__item-data {
+  padding-bottom: 14px;
+}
+
+.form-coment__title {
+  padding-bottom: 35px;
+}
+
+.form__comment-area {
+  width: 280px;
+  min-height: 150px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 13px;
+  box-sizing: border-box;
+  border: 1px solid $form-comment-area-border-color;
+}
+
+.form-coment {
+  padding-bottom: 23px;
+}
+
+.form__extra-item {
+  padding-left: 46px;
+  padding-bottom: 24px;
+}
+
+.form__label--extra {
+  position: relative;
+}
+
+.form__label--extra::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -45px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $form-label-extra-before-border-color;
+}
+
+.form__input-extra:checked + label::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -41px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+}
+
+.form__extra-fields {
+  padding-bottom: 18px;
 }
