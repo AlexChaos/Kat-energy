@@ -2083,6 +2083,12 @@ input[type="radio"].visually-hidden {
     padding-top: 51px;
     padding-bottom: 56px; } }
 
+@media (min-width: 1300px) {
+  .form-header__title {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 68px; } }
+
 /*coment*/
 .form__wrapper {
   width: 280px;
@@ -2416,8 +2422,10 @@ input[type="radio"].visually-hidden {
     padding-right: 36px;
     padding-bottom: 20px; }
   .form__label--weight {
+    padding-left: 3px;
     margin-right: 18px; }
   .form__label--age {
+    padding-left: 3px;
     margin-right: 16px; }
   .form__item::after,
   .form__item-mass::after {
@@ -2475,10 +2483,6 @@ input[type="radio"].visually-hidden {
   .form__label--cat-name {
     padding-left: 2px;
     margin-right: 16px; }
-  .form__label--weight {
-    padding-left: 3px; }
-  .form__label--age {
-    padding-left: 3px; }
   .form__label-phone {
     margin-right: 15px; }
   .form__item-data {
@@ -2591,6 +2595,129 @@ input[type="radio"].visually-hidden {
     padding-top: 6px;
     padding-left: 62px;
     padding-bottom: 10px; } }
+
+@media (min-width: 1300px) {
+  .form {
+    margin-bottom: 85px; }
+  .form__programm-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 44px; }
+  .form__wrapper {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto; }
+  .form__description {
+    padding-left: 0; }
+  .form__element {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%; }
+  .form__element:last-child {
+    padding-bottom: 0; }
+  .form__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 168px;
+    width: 570px;
+    margin-bottom: 0; }
+  .form__item-mass {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 568px;
+    min-height: 168px;
+    padding-top: 26px;
+    padding-bottom: 0;
+    margin: 0; }
+  .form__programm-item {
+    padding-left: 87px; }
+  .form__items-title {
+    padding-left: 0; }
+  .form__items-title::before {
+    width: 705px;
+    left: 555px; }
+  .form__items-title::after {
+    left: -40px; }
+  .form__human-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__element--mail,
+  .form__element--phone {
+    width: 570px;
+    padding-bottom: 0; }
+  .form-coment__title {
+    padding-top: 36px;
+    padding-left: 0; }
+  .form-coment__title::before {
+    top: 59px;
+    width: 1040px;
+    left: 220px; }
+  .form-coment__title::after {
+    top: 59px;
+    left: -40px; }
+  .form__comment-area {
+    width: 1219px;
+    margin: 0 auto; }
+  .form__extra-fields-title {
+    padding-top: 22px;
+    padding-left: 0;
+    padding-bottom: 52px; }
+  .form__extra-fields-title::before {
+    top: 45px;
+    width: 1007px;
+    left: 253px; }
+  .form__extra-fields-title::after {
+    left: -40px; }
+  .form__extra {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .form__extra-item {
+    width: 180px;
+    padding-left: 59px;
+    margin-bottom: 33px; }
+  .form__extra-item:nth-child(odd) {
+    margin-right: 46px;
+    padding-left: 59px; }
+  .form__extra-item:first-child {
+    margin-right: 86px; }
+  .form__extra-item:nth-child(2) {
+    margin-right: 86px; }
+  .form__extra-item:nth-child(3) {
+    margin-right: 86px; }
+  .form__extra-item:last-child {
+    margin-right: 0; }
+  .form__button {
+    margin-left: 0;
+    width: 570px; }
+  .form__note {
+    padding-left: 82px; } }
 
 /*coment*/
 .main-nav {
@@ -3107,6 +3234,10 @@ input[type="radio"].visually-hidden {
     line-height: 24.86px; } }
 
 @media (min-width: 1300px) {
+  .site-list__item a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.86px; }
   .site-list--index a {
     color: #ffffff;
     font-size: 20px;

@@ -51,50 +51,54 @@
           программу питания для вашего кота
         </p>
 
-        <section class="form__item">
-          <h2 class="visually-hidden">Данные о коте</h2>
-          <p class="form__element">
-            <label class="form__label form__label--cat-name" for="name">Имя:*</label>
-            <input class="form__input-text form__input-text--cate-name" id="name" type="text" placeholder="Барсик">
-          </p>
-          <p class="form__element">
-            <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
-            <input class="form__input-text form__input-text--cate-weight" id="weight" type="text" placeholder="7">
-          </p>
-          <p class="form__element">
-            <label class="form__label form__label--age" for="age">Возраст (лет):</label>
-            <input class="form__input-text form__input-text--age" id="age" type="text" placeholder="7">
-          </p>
-        </section>
+        <div class="form__programm-wrapper">
+          <section class="form__item">
+            <h2 class="visually-hidden">Данные о коте</h2>
+            <p class="form__element">
+              <label class="form__label form__label--cat-name" for="name">Имя:*</label>
+              <input class="form__input-text form__input-text--cate-name" id="name" type="text" placeholder="Барсик">
+            </p>
+            <p class="form__element">
+              <label class="form__label form__label--weight" for="weight">Вес (кг):*</label>
+              <input class="form__input-text form__input-text--cate-weight" id="weight" type="text" placeholder="7">
+            </p>
+            <p class="form__element">
+              <label class="form__label form__label--age" for="age">Возраст (лет):</label>
+              <input class="form__input-text form__input-text--age" id="age" type="text" placeholder="7">
+            </p>
+          </section>
 
-        <section class="form__item-mass">
-          <h2 class="visually-hidden">Данные о коте</h2>
-          <ul class="form__programm-items">
-            <li class="form__programm-item">
-              <input class="form__input-radio visually-hidden" id="input-slim" name="programm-type" type="radio" value="slim" checked>
-              <label class="form__label form__programm-label" for="input-slim">Похудение</label>
-            </li>
-            <li class="form__programm-item">
-              <input class="form__input-radio visually-hidden" id="input-fat" name="programm-type" type="radio" value="fat">
-              <label class="form__label form__programm-label" for="input-fat">Набор массы</label>
-            </li>
-            <li class="form__programm-item">
-              <input class="form__input-radio visually-hidden" id="input-advice" name="programm-type" type="radio" value="advice">
-              <label class="form__label form__programm-label" for="input-advice">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </section>
+          <section class="form__item-mass">
+            <h2 class="visually-hidden">Данные о коте</h2>
+            <ul class="form__programm-items">
+              <li class="form__programm-item">
+                <input class="form__input-radio visually-hidden" id="input-slim" name="programm-type" type="radio" value="slim" checked>
+                <label class="form__label form__programm-label" for="input-slim">Похудение</label>
+              </li>
+              <li class="form__programm-item">
+                <input class="form__input-radio visually-hidden" id="input-fat" name="programm-type" type="radio" value="fat">
+                <label class="form__label form__programm-label" for="input-fat">Набор массы</label>
+              </li>
+              <li class="form__programm-item">
+                <input class="form__input-radio visually-hidden" id="input-advice" name="programm-type" type="radio" value="advice">
+                <label class="form__label form__programm-label" for="input-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <section class="form__item-data">
           <h2 class="form__items-title">Контактные данные (владельца кота)</h2>
-          <p class="form__element">
-            <label class="form__label form__label--email" for="human-name">E-mail:*</label>
-            <input class="form__input-text form__about-human-email" id="human-name" type="email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p class="form__element">
-            <label class="form__label form__label-phone" for="human-phone">Телефон:*</label>
-            <input class="form__input-text form__about-human-phone" id="human-phone" type="tel" placeholder="8 (960) 900-60-90">
-          </p>
+          <div class="form__human-wrapper">
+            <p class="form__element form__element--mail">
+              <label class="form__label form__label--email" for="human-name">E-mail:*</label>
+              <input class="form__input-text form__about-human-email" id="human-name" type="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form__element form__element--phone">
+              <label class="form__label form__label-phone" for="human-phone">Телефон:*</label>
+              <input class="form__input-text form__about-human-phone" id="human-phone" type="tel" placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
         </section>
 
         <section class="form-coment">

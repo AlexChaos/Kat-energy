@@ -24,3 +24,11 @@
     padding-bottom: 56px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-header__title {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 68px;
+  }
+}
