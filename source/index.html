@@ -12,15 +12,19 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header__index">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Кет энерджи">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Кет энерджи">
+          </picture>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--index">
               <li class="site-list__item">
                 <a>Главная</a>
               </li>
@@ -41,12 +45,14 @@
       <h1 class="visually-hidden">Функциональное питание для котов «Cat Energy»</h1>
       <section class="promo">
         <div class="promo__wrapper">
-          <header class="promo__header">
-            <h2 class="promo__heade-title">Функциональное питание для котов</h2>
-            <b class="promo__slogan">Занялся собой? Займись котом!</b>
-          </header>
+          <h2 class="promo__header-title">Функциональное питание для котов</h2>
+          <b class="promo__slogan">Занялся собой? Займись котом!</b>
           <div class="promo__img-wrapper">
-            <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Продукт «Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png" width="280" height="271" alt="Продукт Кэт энерджи">
+            </picture>
           </div>
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
@@ -57,21 +63,21 @@
         <div class="categories__wrapper">
           <article class="categories__item">
             <h2 class="visually-hidden">Программа для снижения массы кота</h2>
-            <span class="categories__title">Похудение</span>
+            <span class="categories__title categories__title-losing-weight">Похудение</span>
             <p class="categories__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="categories__link" href="slim.html">Каталог Slim</a>
+            <a class="categories__link categories__link-one" href="slim.html">Каталог Slim</a>
           </article>
 
           <article class="categories__item">
             <h2 class="visually-hidden">Программа для набора массы кота</h2>
-            <span class="categories__title">Набор массы</span>
-            <p class="categories__description">
+            <span class="categories__title categories__title-weight-gain">Набор массы</span>
+            <p class="categories__description categories__description-mass">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="categories__link" href="slim.html">Каталог pro</a>
+            <a class="categories__link categories__link-two" href="slim.html">Каталог pro</a>
           </article>
         </div>
       </section>
@@ -90,13 +96,13 @@
               Замените один-два приема обычной еды на наше функциональное питание.
             </li>
             <li class="advantages__item advantages__item--time">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="example">
+      <section class="example example--background">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">
@@ -114,9 +120,27 @@
               <span class="example__time">затрачено времени</span>
             </div>
 
+            <p class="example__cost">Затраты на питание:<span>15 000 руб.</span></p>
           </div>
-          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-          <img class="example__img" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот с лишним весом.">
+
+          <div class="example__wrapper-before-after">
+            <div class="example__before">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="example__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот с лишним весом.">
+              </picture>
+            </div>
+
+            <div class="example__after">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="example__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Кот с лишним весом.">
+              </picture>
+            </div>
+          </div>
+
           <div class="example__controls">
             <button class="example__button example__button--before">Было</button>
             <input class="example__input visually-hidden" id="example__input-radio" type="range" min="0" max="1" step="1" value="0">
@@ -126,13 +150,19 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts contacts--background">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
-          <h2 class="visually-hidden">Контакты</h2>
-          <b class="contacts__invite">приглашаем к сотрудничеству дилеров!</b>
-          <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+          <div class="contacts__invite-address-wrapper">
+            <b class="contacts__invite">приглашаем<br>к сотрудничеству дилеров!</b>
+            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8<b>Санкт-Петербург</b></span>
+          </div>
           <div class="contacts__map-wrapper">
-            <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Адрес на карте в интернете">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+              <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="360" alt="Адрес на карте в интернете">
+            </picture>
           </div>
         </div>
       </section>
@@ -149,13 +179,16 @@
           <h2 class="visually-hidden">Контакты в социальных сетях</h2>
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item">
-              <a href="https://vk.com/htmlacademy" target="blank" aria-label="Мы в вконтакте">Мы в вконтакте</a>
+              <a href="https://vk.com/htmlacademy" target="blank" aria-label="Мы в вконтакте"></a>
+              <img class="page-footer__social-icon-svg-vk" src="img/icon-vk-mobile.svg" width="22" height="12" alt="В вконтакте">
             </li>
             <li class="page-footer__social-item">
-              <a href="https://www.instagram.com/htmlacademy/" target="blank" aria-label="Мы в инстаграмм">Мы в инстаграмм</a>
+              <a href="https://www.instagram.com/htmlacademy/" target="blank" aria-label="Мы в инстаграмм"></a>
+              <img class="page-footer__social-icon-svg-insta" src="img/icon-insta-mobile.svg" width="17" height="17" alt="В инстаграмм">
             </li>
             <li class="page-footer__social-item">
-              <a href="https://ru-ru.facebook.com/htmlacademy/" target="blank" aria-label="Мы в Фейсбук">Мы в фейсбук</a>
+              <a href="https://ru-ru.facebook.com/htmlacademy/" target="blank" aria-label="Мы в Фейсбук"></a>
+              <img class="page-footer__social-icon-svg-fb" src="img/icon-fb-mobile.svg" width="10" height="19" alt="В Фейсбук">
             </li>
           </ul>
         </section>

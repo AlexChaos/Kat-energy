@@ -1,5 +1,7 @@
 /*index-color*/
 $color-main-text: #444444;
+$cmain-nav-menu-text-color: #111111;
+$main-nav-menu-text-color-desktop: #ffffff;
 $color-body-background: #ffffff;
 $promo-title-text-color: #ffffff;
 $promo-slogan-text-color: #ffffff;
@@ -47,10 +49,60 @@ $form-extra: #222222;
 $form-button: #ffffff;
 $form-button-background-color: #68b738;
 $form-note-color: #444444;
+$main-menu-border-color: #d9d9d9;
+$categories-item-background-color: #f2f2f2;
+$cadvantages-item-background-before-color: #68b738;
+$example-background-color: #f2f2f2;
+$example-result-before-color: #cdcdcd;
+$example-weight-time-background-color: #f2f2f2;
+$example-button-background-color: #f2f2f2;
+$example-rectangle-background-color: #ffffff;
+$example-rectangle-border-color: #cdcdcd;
+$example-rectangle-before-color: #68b738;
+$page-footer-background-color: #f2f2f2;
+$page-footer-social-before-color: #d9d9d9;
+$page-footer-copyright-before-color: #d9d9d9;
+$promo-header-title-tablet-color: #111111;
+$promo-header-slogan-tablet-color: #111111;
+$backgroundt-color-image-wrapper: #f2f2f2;
+$advantages-item-after-color: #f2f2f2;
+$example-backgroun-color-tablet: #ffffff;
+$example-before-background-color: #f2f2f2;
+$example-after-background-color: #eaeaea;
+$example-rectangle-background-before-color: #ffffff;
+$example-rectangle-border-before-color: #cdcdcd;
+$example-rectangle-background-after-color: #68b738;
+$page-header-after-background-desktop-color: #64a83b;
+$contacts-wrapper-background-color: #ffffff;
+$product-beforeline-color: #e6e6e6;
+$other-goods-title-beforeline-color: #68b738;
+$catalog-item-present-description-text-color: #ffffff;
+$present-before-line-color: #cdcdcd;
+$catalog-item-after-background-color: #f2f2f2;
+$catalog-product-characteristic-border-color: #cdcdcd;
+$catalog-more-products-border-color: #e6e6e6;
+$catalog-other-goods-item-border: #cdcdcd;
+$catalog-other-goods-item-child: #cdcdcd;
+$contacts-invite-address-wrapper-background-color: #ffffff;
+$contacts-background-form-color: #f2f2f2;
+$catalog-other-goods-title-background-color: #ffffff;
+
+$form-item-after-background-color: #ededed;
+$form-item-mass-background-color: #ededed;
+$form-programm-label-before-border-color: #cecece;
+$form-input-radio-checked-background-color: #68b738;
+$form-comment-area-border-color: #e6e6e6;
+$form-label-extra-before-border-color: #cecece;
+$form-items-title-before-line-color: #68b738;
+
+$form-element-input-border-color: #cdcdcd;
+$form-extra-fields-title-beforebackground-color: #68b738;
+$form-coment-title-before-beforebackground-color: #68b738;
+$form-item-mass-border-color: #cdcdcd;
 
 /*variable-tablet-desktop-width*/
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1300px;
 /*mobile-menu*/
 $mobile-width-only: 767px;
 /*retina*/

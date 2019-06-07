@@ -1,4 +1,12 @@
 /*coment*/
+.main-nav {
+  position: relative;
+}
+
+.main-nav .main-nav__list {
+  //display: none;
+}
+
 .main-nav__list {
   @include list-reset;
   font-family: "Oswald", "Arial", sans-serif;
@@ -6,4 +14,42 @@
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 0;
+  top: -42px;
+  font-size: 0;
+  width: 24px;
+  height: 18px;
+  background-color: $color-body-background;
+  border: none;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 18px;
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__list {
+    width: 516px;
+    justify-content: flex-end;
+  }
+
+  .main-nav__toggle,
+  .main-nav__toggle::before {
+    display: none;
+  }
 }
