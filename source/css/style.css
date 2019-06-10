@@ -2991,7 +2991,13 @@ input[type="radio"].visually-hidden {
     background-size: 720px auto;
     background-repeat: no-repeat;
     background-position: top left;
-    z-index: -1; }
+    z-index: -1; } }
+  @media (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
+    .page-header__index::after {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-size: contain; } }
+
+@media (min-width: 1300px) {
   .page-header__logo-image {
     width: 203px;
     height: 60px;
@@ -3035,6 +3041,10 @@ input[type="radio"].visually-hidden {
   width: 320px;
   margin: 0 auto;
   margin-bottom: 22px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .promo {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto; } }
 
 .promo__wrapper {
   display: -webkit-box;

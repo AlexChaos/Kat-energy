@@ -20,6 +20,7 @@
 
 .form__element {
   @include margin-padding-reset;
+  position: relative;
   padding-bottom: 14px;
   display: flex;
   align-items: center;
@@ -52,6 +53,16 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form__mail-icon {
+  position: absolute;
+  right: 15px;
+}
+
+.form__phone-icon {
+  position: absolute;
+  right: 12px;
 }
 
 .form__programm-items {
@@ -319,7 +330,7 @@
   }
 
   .form__description {
-    width: 322px;
+    width: 328px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -366,6 +377,16 @@
   .form__item::after,
   .form__item-mass::after {
     display: none;
+  }
+
+  .form__mail-icon {
+    position: absolute;
+    right: 55px;
+  }
+
+  .form__phone-icon {
+    position: absolute;
+    right: 52px;
   }
 
   .form__item {
@@ -609,6 +630,7 @@
   }
 
   .form__description {
+    width: 328px;
     padding-left: 0;
   }
 
@@ -616,6 +638,16 @@
     padding-left: 0;
     padding-right: 0;
     width: 100%;
+  }
+
+  .form__mail-icon {
+    position: absolute;
+    left: 532px;
+  }
+
+  .form__phone-icon {
+    position: absolute;
+    right: 18px;
   }
 
   .form__element:last-child {
