@@ -251,6 +251,7 @@
   position: absolute;
   top: 91px;
   left: 113px;
+  fill: $catalog-item-cart-svg-fill;
 }
 
 .present::before {
@@ -424,6 +425,10 @@
     padding-bottom: 28px;
     border: 1px solid $catalog-other-goods-item-border;
     border-bottom: none;
+  }
+
+  .catalog__other-goods-item:last-child {
+    border-bottom: 1px solid $catalog-other-goods-item-border;
   }
 
   .catalog__other-goods-item:nth-child(5) {
@@ -615,6 +620,10 @@
     border-left: none;
     border-right: none;
     align-items: center;
+  }
+
+  .catalog__other-goods-item:last-child {
+    border-bottom: none;
   }
 
   .catalog__other-goods-button {

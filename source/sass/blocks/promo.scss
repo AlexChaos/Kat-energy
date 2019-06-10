@@ -5,6 +5,11 @@
   width: 320px;
   margin: 0 auto;
   margin-bottom: 22px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .promo__wrapper {

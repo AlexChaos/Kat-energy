@@ -73,14 +73,17 @@
 
 .page-footer__social-icon-svg-vk {
   padding-left: 4px;
+  fill: $copyright-social-svg-fill;
 }
 
 .page-footer__social-icon-svg-insta {
   padding-right: 4px;
+  fill: $copyright-social-svg-fill;
 }
 
 .page-footer__social-icon-svg-fb {
   padding-right: 13px;
+  fill: $copyright-social-svg-fill;
 }
 
 @media (min-width: $tablet-width) {

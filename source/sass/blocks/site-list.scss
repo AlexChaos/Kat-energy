@@ -16,8 +16,23 @@
 .site-list__item::before {
   content: "";
   position: absolute;
-  left: -20px;
-  width: 320px;
+  left: 0;
+  right: 0;
+  //left: -20px;
+  //width: 320px;
+  width: 100%;
+  height: 1px;
+  background-color: $main-menu-border-color;
+}
+
+.site-list__item:last-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  //left: -20px;
+  //width: 320px;
+  width: 100%;
   height: 1px;
   background-color: $main-menu-border-color;
 }
@@ -43,6 +58,10 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24.86px;
+  }
+
+  .site-list__item:last-child::after {
+    display: none;
   }
 }
 

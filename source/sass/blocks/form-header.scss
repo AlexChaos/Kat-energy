@@ -1,4 +1,17 @@
 /*coment*/
+.form-header {
+  position: relative;
+}
+
+.form-header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100vw;
+  height: 1px;
+  background-color: $form-header-before-background-line-color;
+}
+
 .form-header__title {
   @include margin-padding-reset;
   color: $form-header-title-color;
@@ -22,6 +35,10 @@
     line-height: 60px;
     padding-top: 51px;
     padding-bottom: 56px;
+  }
+
+  .form-header::before {
+    display: none;
   }
 }
 
