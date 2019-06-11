@@ -70,6 +70,11 @@
   padding-bottom: 35px;
 }
 
+.example__cost span {
+  @include margin-padding-reset;
+  padding-left: 3px;
+}
+
 .example__button {
   color: $example-button-text-color;
   font-family: "Oswald", "Arial", sans-serif;
@@ -124,7 +129,7 @@
   max-width: 320px;
   height: auto;
   z-index: 10;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 }
 
 .example__controls {
