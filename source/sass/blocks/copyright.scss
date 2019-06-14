@@ -5,6 +5,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .copyright__logo-htmlacademy {
@@ -12,10 +13,40 @@
   fill: $copyright-logo-htmlacademy-svg-fill;
 }
 
+.copyright__link {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright__link:hover .copyright__logo-htmlacademy {
+  fill: $copyright-link-hover-fill;
+  transition: fill 0.3s ease;
+}
+
+.copyright__link:active .copyright__logo-htmlacademy {
+  fill: $copyright-link-active-fill;
+  opacity: 0.3;
+  transition: fill 0.5s ease, opacity 0.5s ease;
+}
+
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+  transition: fill 0.5s ease, opacity 0.5s ease;
+}
+
 @media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .copyright__text {
     padding-top: 14px;
-    padding-right: 23px;
+    padding-right: 20px;
   }
 
   .copyright__logo-htmlacademy {
