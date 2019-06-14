@@ -11,6 +11,17 @@
   padding-top: 23px;
   padding-bottom: 23px;
   color: $cmain-nav-menu-text-color;
+  cursor: pointer;
+}
+
+.site-list__item a:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.site-list__item a:active {
+  opacity: 0.3;
+  transition: opacity 0.5s;
 }
 
 .site-list__item::before {
@@ -18,8 +29,6 @@
   position: absolute;
   left: 0;
   right: 0;
-  //left: -20px;
-  //width: 320px;
   width: 100%;
   height: 1px;
   background-color: $main-menu-border-color;
@@ -30,8 +39,6 @@
   position: absolute;
   left: 0;
   right: 0;
-  //left: -20px;
-  //width: 320px;
   width: 100%;
   height: 1px;
   background-color: $main-menu-border-color;
@@ -39,16 +46,13 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    padding-right: 36px;
+    position: relative;
+    margin-right: 36px;
   }
 
   .site-list__item:nth-child(3) {
-    padding-right: 0;
+    margin-right: 0;
   }
-
-  /*.site-list__item:first-child {
-    padding-left: 0;
-  }*/
 
   .site-list__item::before {
     display: none;
@@ -60,12 +64,35 @@
     line-height: 24.86px;
   }
 
+  .site-list__item-active-index::after,
+  .site-list__item-active-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 13px;
+    width: 100%;
+    height: 2px;
+    background-color: $site-list-item-active-index-after-background-color;
+  }
+
+  .site-list__item-active-link {
+    pointer-events: none;
+  }
+
+  .site-list__item-active-index {
+    pointer-events: none;
+  }
+
   .site-list__item:last-child::after {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .site-list__item-active-index::after {
+    background-color: $site-list-item-active-index-after-background;
+  }
+
   .site-list__item a {
     font-size: 20px;
     font-weight: 400;
@@ -86,6 +113,6 @@
   }
 
   .site-list__item {
-    padding-right: 34px;
+    margin-right: 34px;
   }
 }

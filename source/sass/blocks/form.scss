@@ -25,22 +25,73 @@
 .form__element {
   @include margin-padding-reset;
   position: relative;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
 }
 
-.form__element input {
+.form__input-text {
   @include margin-padding-reset;
   padding-top: 11px;
   padding-bottom: 12px;
   padding-left: 15px;
+  padding-right: 15px;
   width: 172px;
   flex-grow: 1;
   border: 1px solid $form-element-input-border-color;
+  color: $form-element-color-input;
+  background-color: $form-input-text-input-background-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
 
-.form__element label {
+.form__input-text:hover {
+  border-color: $form-input-text-hover-border-color;
+}
+
+.form__input-text:active {
+  outline: 2px solid $form-input-text-active-outline-color;
+}
+
+.form__input-text:focus {
+  outline: 2px solid $form-input-text-active-outline-color;
+}
+
+.form__comment-area {
+  width: 280px;
+  min-height: 150px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  border: 1px solid $form-comment-area-border-color;
+  color: $form-coment-area;
+  background-color: $form-comment-area-background-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__comment-area:hover {
+  border-color: $form-input-text-hover-border-color;
+}
+
+.form__comment-area:active {
+  outline: 2px solid $form-input-text-active-outline-color;
+}
+
+.form__comment-area:focus {
+  outline: 2px solid $form-input-text-active-outline-color;
+}
+
+.form__label {
   color: $form-element-color-label;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -50,13 +101,10 @@
   white-space: nowrap;
 }
 
-.form__element input[placeholder] {
-  color: $form-element-color-input;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
+.form__element--mail:active svg,
+.form__element--phone:active svg {
+  fill: $form-element-mail-phone-active-svg-fill;
+  transition: fill 0.5s ease;
 }
 
 .form__mail-icon {
@@ -91,7 +139,7 @@
 
 .form__items-title {
   position: relative;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 }
 
 .form__items-title::before {
@@ -102,15 +150,6 @@
   background-color: $form-items-title-before-line-color;
   top: 13px;
   right: -20px;
-}
-
-.form__comment-area[placeholder] {
-  color: $form-coment-area;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
 }
 
 .form__extra-fields-title {
@@ -127,7 +166,7 @@
 .form__extra-fields-title::before {
   position: absolute;
   content: "";
-  width: 140px;
+  width: 136px;
   height: 3px;
   background-color: $form-extra-fields-title-beforebackground-color;
   top: 14px;
@@ -154,6 +193,18 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: $form-button-hover-active-background-color;
+  transition: 0.5s, background 0.5s ease;
+}
+
+.form__button:active {
+  background-color: $form-button-hover-active-background-color;
+  color: $form-button-active-color;
+  transition: 0.5s, background 0.5s ease, color 0.5s ease;
 }
 
 .form__note {
@@ -219,6 +270,25 @@
   padding-bottom: 20px;
 }
 
+.form__programm-item label {
+  cursor: pointer;
+}
+
+.form__programm-item label:hover::before {
+  border-color: $form-programm-item-label-hover-border-color;
+  transition: border-color 0.5s ease;
+}
+
+.form__programm-item label:active::before {
+  border-color: $form-programm-item-label-active-border-color;
+  transition: border-color 0.5s ease;
+}
+
+.form__programm-item input:checked + label:active::after {
+  background-color: $form-programm-item-label-checked-background-color;
+  transition: background-color 0.5s ease;
+}
+
 .form__programm-label,
 .form__input-text {
   position: relative;
@@ -260,28 +330,17 @@
 
 .form-coment__title {
   position: relative;
-  padding-bottom: 33px;
+  padding-bottom: 34px;
 }
 
 .form-coment__title::before {
   position: absolute;
   content: "";
-  width: 159px;
+  width: 158px;
   height: 3px;
   background-color: $form-coment-title-before-beforebackground-color;
   top: 14px;
   left: 142px;
-}
-
-.form__comment-area {
-  width: 280px;
-  min-height: 150px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 14px;
-  padding-right: 13px;
-  box-sizing: border-box;
-  border: 1px solid $form-comment-area-border-color;
 }
 
 .form-coment {
@@ -291,6 +350,26 @@
 .form__extra-item {
   padding-left: 46px;
   padding-bottom: 25px;
+}
+
+.form__extra-item label {
+  cursor: pointer;
+}
+
+.form__extra-item label:hover::before {
+  border-color: $formextra-item-label-hover-border-color;
+  transition: border-color 0.5s ease;
+}
+
+.form__extra-item label:active::before {
+  border-color: $formextra-item-label-active-border-color;
+  transition: border-color 0.5s ease;
+}
+
+.form__input-extra:checked + label:active::after {
+  border-color: $formextra-item-label-active-border-color;
+  opacity: 0.3;
+  transition: border-color 0.5s ease, opacity 0.5s;
 }
 
 .form__label--extra {
@@ -343,19 +422,16 @@
     padding-bottom: 65px;
   }
 
-  .form__element label {
+  .form__label {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
   }
 
-  .form__element input {
+  .form__input-text {
     padding-top: 9px;
     padding-bottom: 11px;
     border: 1px solid $form-element-input-border-color;
-  }
-
-  .form__element input[placeholder] {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -366,7 +442,7 @@
   .form__element {
     padding-left: 39px;
     padding-right: 36px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .form__label--weight {
@@ -410,7 +486,6 @@
 
   .form__item-mass {
     border: 1px solid $form-item-mass-border-color;
-    //width: 630px;
     margin-left: 40px;
     margin-right: 38px;
     padding-top: 25px;
@@ -453,7 +528,7 @@
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #68b738;
+    background-color: $form-items-title-after-background-color;
     top: 47px;
     left: -30px;
   }
@@ -461,7 +536,6 @@
   .form__label--email {
     padding-left: 2px;
     margin-right: 20px;
-    //padding-left: 3px;
   }
 
   .form__label--cat-name {
@@ -483,13 +557,13 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 76px;
     padding-left: 39px;
   }
 
   .form-coment__title::before {
-    top: 37px;
+    top: 57px;
     width: 480px;
     left: 258px;
   }
@@ -499,18 +573,15 @@
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #68b738;
-    top: 37px;
+    background-color: $form-coment-title-after-background-color;
+    top: 57px;
     left: -30px;
   }
 
-  .form__comment-area[placeholder] {
+  .form__comment-area {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-  }
-
-  .form__comment-area {
     min-height: 174px;
     width: 631px;
     margin-left: 40px;
@@ -549,7 +620,7 @@
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #68b738;
+    background-color: $form-extra-fields-title-after-background-color;
     top: 42px;
     left: -30px;
   }
@@ -565,7 +636,6 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
-    //padding-top: 10px;
     width: 220px;
     margin-bottom: 28px;
   }
@@ -591,7 +661,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    //margin-bottom: 60px;
   }
 
   .form__button {
@@ -707,18 +776,18 @@
   }
 
   .form-coment__title {
-    padding-top: 36px;
+    padding-top: 16px;
     padding-left: 0;
   }
 
   .form-coment__title::before {
-    top: 59px;
+    top: 39px;
     width: 1040px;
     left: 220px;
   }
 
   .form-coment__title::after {
-    top: 59px;
+    top: 39px;
     left: -40px;
   }
 
@@ -751,7 +820,6 @@
     width: 180px;
     padding-left: 59px;
     margin-bottom: 36px;
-    //margin-right: 40px;
   }
 
   .form__extra-item:nth-child(odd) {

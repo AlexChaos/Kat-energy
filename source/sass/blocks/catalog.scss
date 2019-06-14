@@ -25,7 +25,7 @@
   left: -20px;
   width: 100vw;
   height: 1px;
-  background-color: #e6e6e6;
+  background-color: $catalog-item-after-background-color;
 }
 
 .catalog__item a {
@@ -96,6 +96,18 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog__product-buy:hover {
+  background-color: $catalog-product-buy-hover-background-color;
+  transition: 0.5s, background 0.5s ease;
+}
+
+.catalog__product-buy:active {
+  background-color: $catalog-product-buy-active-background-color;
+  color: $catalog-product-buy-active-color;
+  transition: 0.5s, background 0.5s ease, color 0.5s ease;
 }
 
 .catalog__more-products {
@@ -113,7 +125,7 @@
   left: -20px;
   width: 100vw;
   height: 1px;
-  background-color: #e6e6e6;
+  background-color: $catalog-more-products-after-background-color;
 }
 
 .catalog__more-products-title {
@@ -160,6 +172,18 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog__more-products-show:hover {
+  background-color: $catalog-more-products-show-hoverr-background-color;
+  transition: 0.5s, background-color 0.5s ease;
+}
+
+.catalog__more-products-show:active {
+  color: $catalog-more-products-show-active-color;
+  background-color: $catalog-more-products-show-hoverr-background-color;
+  transition: 0.5s, background-color 0.5s ease, color 0.5s ease;
 }
 
 .catalog__other-goods-item {
@@ -176,7 +200,7 @@
   height: 1px;
   left: 0;
   top: -14px;
-  background-color: #cdcdcd;
+  background-color: $catalog-other-goods-item-before-background-color;
 }
 
 .catalog__other-goods-title {
@@ -212,7 +236,6 @@
 }
 
 .catalog__other-goods-price-table {
-  //display: flex;
   color: $catalog-other-goods-price-tible-color;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -245,11 +268,22 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog__other-goods-button:hover {
+  background-color: $catalog-other-goods-button-hover-background-color;
+  transition: 0.5s, background 0.5s ease;
+}
+
+.catalog__other-goods-button:active {
+  background-color: $catalog-other-goods-button-hover-background-color;
+  color: $catalog-other-goods-button-active-color;
+  transition: 0.5s, background 0.5s ease, color 0.5s ease;
 }
 
 .catalog__item-present-description {
   @include margin-padding-reset;
-  //color: $catalog-present-description-color;
   position: absolute;
   width: 165px;
   bottom: 29px;
@@ -286,7 +320,6 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    //margin-bottom: 42px;
     margin-bottom: 30px;
   }
 
@@ -304,12 +337,9 @@
   .catalog__item {
     position: relative;
     width: 324px;
-    //height: 431px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //align-content: flex-end;
-    //background-color: #f2f2f2;
     margin-bottom: 27px;
   }
 
@@ -328,8 +358,6 @@
     position: absolute;
     width: 324px;
     height: 431px;
-    /*width: 100%;
-    height: calc(100% - 112px);*/
     bottom: -15px;
     left: 0;
     z-index: -1;
