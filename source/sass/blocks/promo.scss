@@ -1,14 +1,25 @@
 /*coment*/
 .promo {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  width: 320px;
-  margin: 0 auto;
+  position: relative;
   margin-bottom: 22px;
+}
+
+.promo::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 305px;
+  top: 0;
+  right: 0;
+  background-color: #63a73a;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-size: auto 305px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: -1;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
   }
 }
 
@@ -16,11 +27,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280px;
+  //width: 280px;
+  width: auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0 auto;
+  //margin: 0 auto;
 }
+
+/*.promo__img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}*/
 
 .promo__header {
   background-color: $promo-header-background-color;
@@ -28,6 +47,7 @@
 
 .promo__header-title {
   @include margin-padding-reset;
+  width: 253px;
   font-family: "Oswald", "Arial", sans-serif;
   padding-top: 27px;
   padding-bottom: 25px;
@@ -50,6 +70,7 @@
 
 .promo__link {
   display: flex;
+  width: 100%;
   justify-content: center;
   color: $promo-link-text-color;
   background-color: $promo-link-button-color;
@@ -74,22 +95,29 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    width: 768px;
+    //width: 768px;
     margin: 0 auto;
+    width: auto;
     background-image: none;
   }
 
+  .promo::after {
+    display: none;
+  }
+
   .promo__wrapper {
-    width: 708px;
+    //width: 708px;
+    width: auto;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+    display: flex;
     align-items: flex-start;
   }
 
   .promo__header-title {
     order: 0;
-    width: 415px;
+    width: 418px;
     color: $promo-header-title-tablet-color;
     font-size: 60px;
     font-weight: 400;
@@ -125,7 +153,8 @@
 
   .promo__img-wrapper {
     position: relative;
-    width: 709px;
+    //width: 709px;
+    width: auto;
     height: 609px;
     order: 3;
     z-index: 1;
