@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Kat Energy Главная страница</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <script>
       // Picture element HTML5 shiv
@@ -161,7 +161,7 @@
 
           <div class="example__controls">
             <button class="example__button example__button--before">Было</button>
-            <input class="example__input visually-hidden" id="example__input-radio" type="range" min="0" max="1" step="1" value="0">
+            <input class="example__input visually-hidden" id="example__input-radio" type="range" min="0" max="1" step="1" value="0" aria-label="Переключатель">
             <label class="example__rectangle" for="example__input-radio"></label>
             <button class="example__button example__button--after">Стало</button>
           </div>
@@ -184,7 +184,7 @@
               <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="360" alt="Адрес на карте в интернете">
+              <img class="contacts__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Адрес на карте в интернете">
             </picture>
           </div>
         </div>
