@@ -1,14 +1,11 @@
-/*coment*/
 .contacts--background {
   background: $contacts-background-color;
 }
 
 .contacts__invite-address-wrapper {
-  //width: 280px;
   will-change: auto;
   padding-left: 20px;
   padding-right: 20px;
-  //margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,9 +44,7 @@
 .contacts__map-wrapper {
   position: relative;
   display: flex;
-  //width: 320px;
   width: auto;
-  //margin: 0 auto;
 }
 
 .contacts__map-wrapper iframe {
@@ -71,11 +66,9 @@
 
 @media (min-width: $tablet-width) {
   .contacts__invite-address-wrapper {
-    //width: 708px;
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
-    //margin: 0 auto;
   }
 
   .contacts__background-color {

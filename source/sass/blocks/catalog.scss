@@ -1,14 +1,11 @@
-/*coment*/
 .catalog {
   margin-bottom: 33px;
 }
 
 .catalog__wrapper {
-  //width: 280px;
   width: auto;
   padding-left: 20px;
   padding-right: 20px;
-  //margin: 0 auto;
 }
 
 .catalog__item {
@@ -41,21 +38,16 @@
 .catalog__item-img-wrapper {
   display: flex;
   width: 50%;
-  //background: #e6e6e6;
   min-height: 144px;
-  //height: auto;
 }
 
 .catalog__item-img-wrapper picture {
   display: flex;
   flex-direction: column;
   width: 100%;
-  //height: auto;
 }
 
 .catalog__item-img {
-  /*width: 140px;
-  height: 144px;*/
   width: 100%;
   height: auto;
 }
@@ -69,7 +61,6 @@
 
 .catalog__product-title {
   @include margin-padding-reset;
-  //padding-top: 20px;
   padding-bottom: 12px;
   width: 74px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -238,7 +229,7 @@
 }
 
 .catalog__other-goods-title span {
-  background-color: #ffffff;
+  background-color: $catalog-other-goods-title-span-background-color;
   padding-right: 20px;
 }
 
@@ -275,7 +266,6 @@
 }
 
 .catalog__other-goods-price-table tr {
-  //width: 280px;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -317,10 +307,7 @@
   @include margin-padding-reset;
   position: absolute;
   width: 165px;
-  //top: 50px;
   bottom: 45px;
-  //margin-top: 75px;
-  //margin-right: 27px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -335,15 +322,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //background-color: #6fb346;
-  //position: relative;
   padding-top: 25px;
 }
 
 .catalog__img-wrapper {
   width: 100%;
-  background-color: #6fb346;
-  //position: relative;
+  background-color: $catalog-img-wrapper-background-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -353,8 +337,6 @@
 .catalog__item-cart {
   position: absolute;
   top: 92px;
-  //left: 113px;
-  //margin-top: -47px;
   fill: $catalog-item-cart-svg-fill;
   z-index: 1;
 }
@@ -402,7 +384,6 @@
     width: 324px;
     height: 208px;
     padding-top: 45px;
-    //background: none;
   }
 
   .catalog__item::after {
@@ -698,7 +679,7 @@
     content: "";
     width: 30px;
     height: 3px;
-    background-color: #68b738;
+    background-color: $catalog-other-goods-title-afterr-background-color;
     left: -70px;
     top: 21px;
   }
